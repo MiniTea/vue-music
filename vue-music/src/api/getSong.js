@@ -3,11 +3,11 @@ import {getUid} from "../common/js/uid";
 import {ERR_OK} from "./urlConfig";
 import axios from 'axios'
 
-// const debug = process.env.NODE_ENV !== 'production'
+const debug = process.env.NODE_ENV !== 'production'
 
 // 获取播放地址
 export function getSongsUrl(songs) {
-    const url = '/api/getPurlUrl'
+    const url = debug ? '/api/getPurlUrl' : 'http://musicforme/music/api/getPurlUrl'
 
     let mids = []
     let types = []
@@ -83,7 +83,7 @@ function getUrlMid(mids, types) {
 }
 
 export function getLyric(mid) {
-    const url = '/api/getLyric'
+    const url = debug ? '/api/getLyric' : 'http://musicforme/music/api/getLyric'
 
     const data = Object.assign({}, commonParams, {
         songmid: mid,
