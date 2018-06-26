@@ -3,7 +3,7 @@ import {getUid} from "../common/js/uid";
 import {ERR_OK} from "./urlConfig";
 import axios from 'axios'
 
-// 应用getSongsUrl，getLyric
+// getSongsUrl，getLyric
 const debug = process.env.NODE_ENV !== 'production'
 
 // 获取播放地址
