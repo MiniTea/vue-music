@@ -2,6 +2,7 @@ import jsonp from 'common/js/jsonp'
 import {commonParams, options} from './urlConfig'
 import axios from 'axios'
 
+// 应用getPlaylist，getDisclist
 const debug = process.env.NODE_ENV !== 'production'
 
 export function getRecommend() {
