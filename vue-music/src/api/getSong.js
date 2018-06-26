@@ -8,7 +8,7 @@ const debug = process.env.NODE_ENV !== 'production'
 
 // 获取播放地址
 export function getSongsUrl(songs) {
-    const url = debug ? '/api/getPurlUrl' : 'http://musicforme/music/api/getPurlUrl'
+    const url = debug ? '/api/getPurlUrl' : 'http://116.85.10.217/music/api/getPurlUrl'
 
     let mids = []
     let types = []
@@ -84,7 +84,7 @@ function getUrlMid(mids, types) {
 }
 
 export function getLyric(mid) {
-    const url = debug ? '/api/getLyric' : 'http://musicforme/music/api/getLyric'
+    const url = debug ? '/api/getLyric' : 'http://116.85.10.217/music/api/getLyric'
 
     const data = Object.assign({}, commonParams, {
         songmid: mid,

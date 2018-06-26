@@ -20,7 +20,7 @@ export function getRecommend() {
 
 export function getPlaylist() {
     // 代理服务地址
-    const url = debug ? '/api/getPlaylist' : 'http://musicforme/music/api/getPlaylist'
+    const url = debug ? '/api/getPlaylist' : 'http://116.85.10.217/music/api/getPlaylist'
 
     const data = Object.assign({}, commonParams, {
         platform: 'yqq',
@@ -65,7 +65,7 @@ export function getSongList(disstid) {
 }
 
 export function getDisclist(dissid) {
-    const url = debug ? '/api/getDisclist' : 'http://musicforme/music/api/getDisclist'
+    const url = debug ? '/api/getDisclist' : 'http://116.85.10.217/music/api/getDisclist'
 
     const data = Object.assign({}, commonParams, {
         disstid: dissid,
